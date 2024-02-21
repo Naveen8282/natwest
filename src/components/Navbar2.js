@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
+import { Link } from "react-router-dom";
 
 function Navbar2() {
   return (
@@ -10,11 +10,21 @@ function Navbar2() {
       <Navbar className="navbar2color " data-bs-theme="light" expand="lg">
         <Container>
           <Nav className="me-auto">
-            <Nav.Link>PaaS Home</Nav.Link>
-            <Nav.Link>CaaS Home</Nav.Link>
-            <Nav.Link href="#paas">Paas Announcements</Nav.Link>
-            <Nav.Link href="#caas">Caas Announcements</Nav.Link>
-            <Nav.Link href="#contact">Contact Us</Nav.Link>
+            <Link to="/paas" className="nav-link">
+              PaaS Home
+            </Link>
+            <Link to="/caas" className="nav-link">
+              CaaS Home
+            </Link>
+            <Link to="/paasAnc" className="nav-link">
+              Paas Announcements
+            </Link>
+            <Link to="/caasAnc" className="nav-link">
+              Caas Announcements
+            </Link>
+            <Link to="/contactus" className="nav-link">
+              Contact Us
+            </Link>
           </Nav>
         </Container>
       </Navbar>

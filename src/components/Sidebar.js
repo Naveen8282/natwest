@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 function Sidebar() {
   return (
-    <div>
+    <div className="sidebarstyle">
       <Card style={{ width: "18rem" }}>
         <div className="headerstyle">
           <Card.Header>Environment</Card.Header>
